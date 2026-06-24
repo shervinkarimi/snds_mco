@@ -1,19 +1,21 @@
 # Extraction des données MCO (SNDS)
 
-Cette page propose un code d'extraction des données de Médecine Chirurgie Obstétrique (MCO) depuis les données PMSI de la base du Système National des Données de Santé (SNDS). Ces données étant très riches, cette page propose une extraction simplifiée pour guider les utilisateurs novices dans leur exploitation, permettant notamment de créer un panel de données par année-mois-établissement sur les principaux indicateurs d'hospitalisation : nombre de séjours, nombre de jours d'hospitalisation, par catégorie de séjour et de sévérité.
+Cette page propose un code d'extraction des données de Médecine-Chirurgie-Obstétrique (MCO) depuis les données Programme de Médicalisation des Systèmes d'Information (PMSI) de la base du Système National des Données de Santé (SNDS). Ces données étant très riches, cette page propose une extraction simplifiée pour guider les utilisateurs novices dans leur exploitation, permettant notamment de créer un panel de données par année-mois-établissement sur les principaux indicateurs d'hospitalisation : nombre de séjours, nombre de jours d'hospitalisation, par catégorie de séjour et de sévérité.
+
+Cette page est dédié à l'extraction des données via 
 
 ## Accès aux données
 
-L'accès aux données nécessite une autorisation des autorités nationales ([CESREES et CNIL](https://www.health-data-hub.fr/starter-kit)) ou un accès permanent accordé aux laboratoires académiques. Pour les chercheurs étrangers, l'obtention d'une autorisation pouvant s'avérer difficile en pratique, les recherches sont généralement menées en partenariat avec des chercheurs locaux. La liste des laboratoires CNRS est disponible sur [l'annuaire du CNRS](https://annuaire.cnrs.fr/index).
+L'accès aux données nécessite une autorisation sépcifiques soit par demande sur projet ([CESREES et CNIL](https://www.health-data-hub.fr/starter-kit)) soit via un accès permanent accordé aux laboratoires académiques (ex: CNRS) ou aux établissements de santé (CHU).
 
-## Structure des dossiers
+## Structure de l'espace SNDS
 
 L'espace SNDS est structuré en plusieurs dossiers :
 
 - **oravue** : bibliothèque Oracle contenant toutes les tables de données de consommation de soins, notamment les tables MCO
 - **work** : dossier SAS vidé chaque nuit, destiné au stockage temporaire des tables
 - **orauser** : bibliothèque Oracle pour le stockage temporaire des tables (à nettoyer régulièrement par les utilisateurs)
-- **sasdata1** : espace dédié à l'utilisateur
+- **sasdata1** : dossier SAS dédié au stockage des tables de l'utilisateur
 
 ## Données
 
