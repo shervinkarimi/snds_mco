@@ -21,7 +21,7 @@ L'espace SNDS est structuré en plusieurs dossiers :
 
 Les données MCO sont réparties sur plusieurs tables avec des niveaux d'agrégation différents, reliées par des jointures distinctes.
 
-![Schéma des jointures entre tables MCO](images/MCO_jointures.png)
+![Schéma des jointures entre tables MCO](images/MCO_jointure.png)
 
 Le HDH met à disposition une [présentation détaillée](lien) de l'utilisation des données du PMSI, qui incluent les MCO.
 
