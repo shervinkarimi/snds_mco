@@ -21,7 +21,7 @@ L'espace SNDS est structuré en plusieurs dossiers :
 
 Les données MCO sont réparties sur plusieurs tables avec des niveaux d'agrégation différents, reliées par des jointures distinctes.
 
-<figure>
+<figure align="center">
   <img src="images/MCO_jointure.png" alt="Schéma des jointures entre tables MCO" width="600">
   <figcaption><em>Figure 1 : Schéma des jointures entre les tables MCO. La table centrale T_MCOxxB est reliée aux autres tables via ETA_NUM ou ETA_NUM + RSA_NUM.</em></figcaption>
 </figure>
