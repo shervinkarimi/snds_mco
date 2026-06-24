@@ -24,8 +24,7 @@ Les données MCO sont réparties sur plusieurs tables avec des niveaux d'agréga
 <div align="center">
   <img src="images/MCO_jointure.png" alt="Schéma des jointures entre tables MCO" width="600">
   <br>
-  <em>Figure 1 : Schéma des jointures entre les tables MCO. <br>
-    Source: Initiation au PMSI à travers le SNDS, Assurance Maladie.</em>
+  <em>Figure 1 : Schéma des jointures entre les tables MCO (source: Initiation au PMSI à travers le SNDS, Assurance Maladie).</em>
 </div>
 <br>
 
