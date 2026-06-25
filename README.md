@@ -10,12 +10,15 @@ L'accès aux données nécessite une autorisation spécifique, soit par demande 
 
 ## Documentation
 
-Le HDH met à disposition une [présentation détaillée](https://www.documentation-snds.health-data-hub.fr/snds/cnam/formations/supports_de_cours/10_formation_initiation_au_pmsi_a_travers_le_snds_mars_2026.html) de l'utilisation des données du PMSI, qui incluent les MCO.
+Le HDH met à disposition :
+
+- une [présentation détaillée](https://www.documentation-snds.health-data-hub.fr/snds/cnam/formations/supports_de_cours/10_formation_initiation_au_pmsi_a_travers_le_snds_mars_2026.html) pour l'utilisation des données du PMSI, qui incluent les MCO.
+- un dictionnaire de variable et un graphique interactif de lien entre les variables ([lien]([https://www.documentation-snds.health-data-hub.fr/snds/cnam/formations/supports_de_cours/10_formation_initiation_au_pmsi_a_travers_le_snds_mars_2026.html](https://health-data-hub.shinyapps.io/dico-snds/))
 
 
 ## Structure de l'espace SNDS
 
-L'espace SNDS est structuré en plusieurs dossiers :
+L'espace SNDS est structuré en plusieurs dossiers, dont :
 
 - **oravue** : bibliothèque Oracle contenant toutes les tables de données de consommation de soins, notamment les tables MCO
 - **work** : bibliothèque SAS vidé chaque nuit, destiné au stockage temporaire des tables
@@ -38,7 +41,7 @@ Les données MCO sont réparties sur plusieurs tables avec des niveaux d'agréga
 
 
 
-La table centrale de la base MCO est la table Bloc `T_MCOxxB` pour l'année `xx`. L'image ci-dessus montre les liens de jointure entre les tables, via `ETA_NUM` (numéro de l'établissement) ou via `ETA_NUM` et `RSA_NUM` (numéro du séjour, unique par établissement et par année).
+La table centrale de la base MCO est la table Bloc `T_MCOxxB` pour l'année `xx`. L'image ci-dessus montre les liens de jointure entre les tables, via `ETA_NUM` (numéro de l'établissement) ou via `ETA_NUM` et `RSA_NUM` (numéro du séjour, unique par établissement et par année). Les joitnures doivent donc se faire uniquement entre les tables d'une même année.
 
 ## Code
 
