@@ -8,18 +8,24 @@ Cette page est dédiée à l'extraction des données via l'espace SNDS. Les donn
 
 L'accès aux données nécessite une autorisation spécifique, soit par demande sur projet ([CESREES et CNIL](https://www.health-data-hub.fr/starter-kit)), soit via un accès permanent accordé aux laboratoires académiques (ex. CNRS) ou aux établissements de santé (CHU).
 
+## Documentation
+
+Le HDH met à disposition une [présentation détaillée](https://www.documentation-snds.health-data-hub.fr/snds/cnam/formations/supports_de_cours/10_formation_initiation_au_pmsi_a_travers_le_snds_mars_2026.html) de l'utilisation des données du PMSI, qui incluent les MCO.
+
+
 ## Structure de l'espace SNDS
 
 L'espace SNDS est structuré en plusieurs dossiers :
 
 - **oravue** : bibliothèque Oracle contenant toutes les tables de données de consommation de soins, notamment les tables MCO
-- **work** : dossier SAS vidé chaque nuit, destiné au stockage temporaire des tables
+- **work** : bibliothèque SAS vidé chaque nuit, destiné au stockage temporaire des tables
 - **orauser** : bibliothèque Oracle pour le stockage temporaire des tables (à nettoyer régulièrement par les utilisateurs)
-- **sasdata1** : dossier SAS dédié au stockage des tables de l'utilisateur
+- **sasdata1** : bibliothèque SAS dédié au stockage des tables de l'utilisateur
 
 ## Données
 
-Les données MCO sont réparties sur plusieurs tables avec des niveaux d'agrégation différents, reliées par des jointures distinctes.
+Les données MCO sont réparties sur plusieurs tables avec des niveaux d'agrégation différents. Toutes les tables sont découpées par année et contiennent l'ensemble des séjours ayant au moins un jour sur l'année en cours.
+
 
 <div align="center">
   <img src="images/MCO_jointure.png" alt="Schéma des jointures entre tables MCO" width="600">
@@ -29,9 +35,8 @@ Les données MCO sont réparties sur plusieurs tables avec des niveaux d'agréga
 <br>
 
 
-Le HDH met à disposition une [présentation détaillée](lien) de l'utilisation des données du PMSI, qui incluent les MCO.
 
-Toutes les données sont découpées par année et contiennent l'ensemble des séjours ayant au moins un jour sur l'année en cours.
+
 
 La table centrale de la base MCO est la table Bloc `T_MCOxxB` pour l'année `xx`. L'image ci-dessus montre les liens de jointure entre les tables, via `ETA_NUM` (numéro de l'établissement) ou via `ETA_NUM` et `RSA_NUM` (numéro du séjour, unique par établissement et par année).
 
