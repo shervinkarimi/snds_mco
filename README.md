@@ -45,9 +45,9 @@ La table centrale de la base MCO est la table Bloc `T_MCOxxB` pour l'année `xx`
 
 ## Code
 
-Le code ci-dessous est écrit pour SAS Enterprise Guide, le logiciel principal utilisé dans l'exploitation du SNDS, particulièrement adapté à la volumétrie de ces bases. Si vous souhaitez utiliser R, la CNAM fournit également un [guide](lien), mais cela nécessite généralement de passer par un moteur Oracle pour gérer la volumétrie conséquente de ces bases.
+Le code ci-dessous est écrit en SAS Guide, le logiciel principal utilisé dans l'exploitation du SNDS par la CNAM, particulièrement adapté de grande volumétrie. Si vous souhaitez utiliser R, la CNAM fournit également un [guide](https://documentation-snds.health-data-hub.fr/snds/cnam/bonnes_pratiques_r/), mais cela nécessite généralement de passer par un moteur Oracle pour gérer la volumétrie conséquente de ces bases.
 
-Le code utilise notamment la macro [`%connector`](lien) qui permet le recours au moteur Oracle et donc de meilleures performances.
+Le code utilise notamment la macro `%connector` qui permet le recours au moteur Oracle et donc de meilleures performances.
 
 ```r
 # Exemple d'utilisation
