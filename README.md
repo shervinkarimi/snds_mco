@@ -12,7 +12,7 @@ L'accès aux données nécessite une autorisation spécifique, soit par demande 
 
 Le HDH met à disposition :
 
-- une présentation détaillée pour l'utilisation des données du PMSI, qui incluent les MCO ([dossier : 10-Initiation au PMSI à travers le SNDS](https://www.documentation-snds.health-data-hub.fr/snds/cnam/formations/supports_de_cours/10_formation_initiation_au_pmsi_a_travers_le_snds_mars_2026.html))
+- une présentation détaillée pour l'utilisation des données du PMSI, qui incluent les MCO (dossier : [10-Initiation au PMSI à travers le SNDS](https://www.documentation-snds.health-data-hub.fr/snds/cnam/formations/supports_de_cours/10_formation_initiation_au_pmsi_a_travers_le_snds_mars_2026.html))
 - un dictionnaire de variables et un graphique interactif des liens entre les variables ([lien](https://health-data-hub.shinyapps.io/dico-snds/))
 
 
